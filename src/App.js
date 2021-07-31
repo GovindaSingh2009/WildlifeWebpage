@@ -1,22 +1,29 @@
-import logo from './logo.svg';
+import logo from './wildlife.PNG';
 import './App.css';
+import ClickButton from './Components/ClickButton';
+import RespOfButton from './Components/RespOfButton';
+import StylingConcept from './Components/Styling';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <h1> KBR National Park</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to KBR National Park
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="http://kbrnp.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Visit website for more info..
         </a>
+        <ClickButton animal = "Tigers"  result ={RespOfButton} />
+        <RespOfButton />
+        <StylingConcept primary1 = {true} />
       </header>
     </div>
   );
