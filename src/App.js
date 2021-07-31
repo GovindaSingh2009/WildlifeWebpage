@@ -3,12 +3,13 @@ import './App.css';
 import ClickButton from './Components/ClickButton';
 import RespOfButton from './Components/RespOfButton';
 import StylingConcept from './Components/Styling';
+import Styles from './appStyle.Module.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1> KBR National Park</h1>
+      <h1 className = {Styles.headcolor}> KBR National Park</h1>  {/* CSS Module styling*/}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Welcome to KBR National Park
